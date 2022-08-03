@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+  
+
+*,
+ {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto";
+
+}
+
+main {
+    padding:0 16px;
+}  
+
+header {
+    font-family: "shrikhand", cursive;
+    text-align: center;
+    box-shadow: 0px 0px 8px 1px  lightgrey;
+    padding: 6px;
+    margin: 0;
+    position: relative;
+}
+
+main .ville {
+    background-color: #f3f3f3;
+    text-align:center;
+    padding: 8px;
+}
+
+/* Explorer */
+
+.explorer {
+   text-align: center;
+}
+.explorer h2 {
+    margin-top: 32px;
+    font-size: 32px
+}
+
+.explorer p {
+    font-size: 16px;
+}
+.explorer button {
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 1px 1px 10px -3px black;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    transition: transform 200ms;
+    margin-top: 32px;
+
+}
+
+.explorer button:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+.Fonctionnement li {
+    position: relative;
+    background-color: #f6f6f6;
+    padding: 24px 32px;
+    flex-grow: 1;
+    border-radius: 16px;
+    box-shadow: 1px 1px 10px -3px black;
+    list-style-type: none;
+
+
+}
+.Fonctionnement li:hover {
+
+    transform: scale(1.02);
+
+}
+
+.Fonctionnement li ::before {
+        counter-increment: compteListe 1;
+        content: counter(compteListe)"";
+        background-color: #9356DC;
+        width: 32px;
+        height: 32px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        position: absolute;
+        left: -16px;
+        bottom: 16px;
+
+    }
+.h2fonctionnement {
+    margin-left: 2rem;
+}
+.Fonctionnement ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    flex-direction:column ;
+
+
+}
+
+
+.Menus {
+    background-color: #f6f6f6;
+
+}
+.carte {
+    height: 18rem;
+    flex-grow: 1;
+    min-width: 30rem;
+    background-color: white;
+    border-radius: 16px 16px 16px 16px;
+
+}
+
+.menus-carte {
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 32px 64px 32px;
+
+}
+
+.Menus h2 {
+
+    margin: 34px 16px 16px ;
+
+    padding: 50px 0 20px 20px   ;
+}
+
+
+.carte-image {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.carte-description {
+    position: relative;
+
+    margin-left: 1rem;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.nouveau {
+    position: relative;
+}
+.nouveau::before {
+    content: "Nouveau";
+    position: absolute;
+    height: 2rem;
+    width: 5rem;
+    background-color:#99E2D0;
+    display: grid;
+    place-items: center;
+    right: 16px;
+    top: 16px;
+}
+
+.carte-description i {
+
+    font-size: 32px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer { 
+    background-color: #4A3F3F;
+    padding: 16px 32px;
+}
+
+.omf {
+    font-family: shrikhand;
+    color: white;
+    font-weight: 500;
+}
+
+footer p {
+    color: white;
+}
+
+
+
+
