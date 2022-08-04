@@ -32,6 +32,8 @@ main .ville {
     padding: 8px;
 }
 
+
+
 /* Explorer */
 
 .explorer {
@@ -64,7 +66,7 @@ main .ville {
     opacity: 0.9;
 }
 
-.Fonctionnement li {
+.fonctionnement li {
     position: relative;
     background-color: #f6f6f6;
     padding: 24px 32px;
@@ -75,15 +77,9 @@ main .ville {
 
 
 }
-.Fonctionnement li:hover {
 
-    transform: scale(1.02);
 
-}
-
-.Fonctionnement li ::before {
-        counter-increment: compteListe 1;
-        content: counter(compteListe)"";
+.fonctionnement li div {
         background-color: #9356DC;
         width: 32px;
         height: 32px;
@@ -98,24 +94,32 @@ main .ville {
 .h2fonctionnement {
     margin-left: 2rem;
 }
-.Fonctionnement ol {
+.fonctionnement ol {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     flex-direction:column ;
+    font-weight: bold;
+
 
 
 }
+.fonctionnement ol li div { 
+    color: white;
+}
+ ol i {
+     margin: 0px 15px 0 0;
+     color: #9356DC;
+ }
 
-
-.Menus {
+.menus {
     background-color: #f6f6f6;
 
 }
 .carte {
     height: 18rem;
     flex-grow: 1;
-    min-width: 30rem;
+    width: 100%;
     background-color: white;
     border-radius: 16px 16px 16px 16px;
 
@@ -130,7 +134,7 @@ main .ville {
 
 }
 
-.Menus h2 {
+.menus h2 {
 
     margin: 34px 16px 16px ;
 
@@ -139,7 +143,7 @@ main .ville {
 
 
 .carte-image {
-    height: 12rem;
+    height: 192px;
     width: 100%;
     object-fit: cover;
     border-radius: 16px 16px 0 0;
@@ -148,7 +152,7 @@ main .ville {
 .carte-description {
     position: relative;
 
-    margin-left: 1rem;
+    margin-left: 16px;
     color: black;
 }
 
@@ -157,14 +161,18 @@ a {
 }
 
 
+
+
+
+
 .nouveau {
     position: relative;
 }
 .nouveau::before {
     content: "Nouveau";
     position: absolute;
-    height: 2rem;
-    width: 5rem;
+    height: 32px;
+    width: 80px;
     background-color:#99E2D0;
     display: grid;
     place-items: center;
@@ -194,8 +202,13 @@ footer {
 
 footer p {
     color: white;
+    margin: 8px 0;
 }
-
-
+footer i {
+    margin: 0 10px 0 0;
+}
+i.fas.fa-ustensils {
+    margin: 10px;
+}
 
 
