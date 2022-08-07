@@ -68,15 +68,17 @@ header {
 
  }
 
- .conteneur-entrées {
+ .conteneur-entrees {
+    display: flex;
     box-shadow: 0 0 16px #0000002e;
-
-     max-width: 100%;
-     padding: 10px ; 
-     margin: 1rem;
-     background-color: white;
-     border-radius: 16px 16px 16px 16px;
-     height: auto;
+    max-width: 100%;
+    gap: 1rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 16px 16px 16px 16px;
+    height: auto;
+    padding: 0px 0px 0px 10px ;
+    overflow: hidden;
 
  } 
  .conteneur-general p {
@@ -90,15 +92,17 @@ header {
 
 
  .conteneur-plats {
+    display: flex;
+    box-shadow: 0 0 16px #0000002e;
     max-width: 100%;
-    height: 2rem;
     gap: 1rem;
     margin: 1rem;
     background-color: white;
     border-radius: 16px 16px 16px 16px;
-    padding: 10px ; 
-    box-shadow: 0 0 16px #0000002e;
     height: auto;
+    padding: 0px 0px 0px 10px ;
+    overflow: hidden;
+    
     
 
 
@@ -107,26 +111,67 @@ header {
 
 
 .conteneur-desserts {
+    display: flex;
     box-shadow: 0 0 16px #0000002e;
     max-width: 100%;
-    height: 2rem;
     gap: 1rem;
     margin: 1rem;
     background-color: white;
     border-radius: 16px 16px 16px 16px;
     height: auto;
-    padding: 10px;
+    padding: 0px 0px 0px 10px ; 
+    overflow: hidden;
 
 
+}
+
+span { 
+    overflow: hidden;
+   /* white-space: nowrap;
+    text-overflow: ellipsis;*/
+} 
+
+h4, p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+i.fas.fa-check {
+    display: grid;
+    place-items: center; 
+    background: white;
+    aspect-ratio: 1;
+    width: 1.5rem;
+    border-radius: 1rem;
+    color: #99e2d0 ;
 }
 .menus-plats p {
-    align-items: center;
+    align-items: center; 
 }
-
 .prix {
     display: flex;
-    margin-right: 10px;
+    margin-left: auto;
+    align-items: center;
+    padding-top: 2rem;
+    font-weight: 900;
 }
+
+.check { 
+   display: grid;
+   place-items: center; 
+    background-color: #99e2d0;
+    margin-right: -4rem;
+    width: 4rem;
+    transition: all 1s;
+
+}
+.conteneur-entrees:hover .check { margin-right: 0rem;}
+
+.conteneur-plats:hover .check { margin-right: 0rem;}
+
+.conteneur-desserts:hover .check { margin-right: 0rem;}
+
 
 .commander button {
     color: white;
@@ -141,6 +186,7 @@ header {
     margin-top: 32px;
 
 }
+
 .commander button:hover {
     transform: scale(1.02);
     opacity: 0.9;
@@ -168,4 +214,11 @@ footer {
 
 footer p {
     color: white;
+    margin: 8px 0;
+}
+footer i {
+    margin: 0 10px 0 0;
+}
+i.fas.fa-ustensils {
+    margin: 10px;
 }
