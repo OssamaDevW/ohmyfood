@@ -47,7 +47,22 @@ header {
  }
  
 
+
+
  /* Menus */
+
+ h3 {position: relative;}
+h3::after  {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    left: 0rem;
+    height: 0.25rem;
+    width: 3rem;
+    background-color: #99e2d0;
+    
+
+}
 
  .menus_carte { 
      display: flex;
@@ -68,19 +83,6 @@ header {
 
  }
 
- .conteneur-entrees {
-    display: flex;
-    box-shadow: 0 0 16px #0000002e;
-    max-width: 100%;
-    gap: 1rem;
-    margin: 1rem;
-    background-color: white;
-    border-radius: 16px 16px 16px 16px;
-    height: auto;
-    padding: 0px 0px 0px 10px ;
-    overflow: hidden;
-
- } 
  .conteneur-general p {
      padding: 0;
      margin: 0 0 10px 0; 
@@ -91,7 +93,7 @@ header {
  } 
 
 
- .conteneur-plats {
+ .conteneur_  {
     display: flex;
     box-shadow: 0 0 16px #0000002e;
     max-width: 100%;
@@ -102,27 +104,19 @@ header {
     height: auto;
     padding: 0px 0px 0px 10px ;
     overflow: hidden;
-    
-    
-
-
+   
+}
+.conteneur_ {
+    animation: appear 1.5s;
 }
 
-
-
-.conteneur-desserts {
-    display: flex;
-    box-shadow: 0 0 16px #0000002e;
-    max-width: 100%;
-    gap: 1rem;
-    margin: 1rem;
-    background-color: white;
-    border-radius: 16px 16px 16px 16px;
-    height: auto;
-    padding: 0px 0px 0px 10px ; 
-    overflow: hidden;
-
-
+@keyframes appear {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to { transform: translateY(0);
+    opacity: 1;}
 }
 
 span { 
@@ -166,11 +160,8 @@ i.fas.fa-check {
     transition: all 1s;
 
 }
-.conteneur-entrees:hover .check { margin-right: 0rem;}
+.conteneur_:hover .check { margin-right: 0rem;}
 
-.conteneur-plats:hover .check { margin-right: 0rem;}
-
-.conteneur-desserts:hover .check { margin-right: 0rem;}
 
 
 .commander button {

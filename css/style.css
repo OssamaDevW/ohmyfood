@@ -32,6 +32,26 @@ main .ville {
     padding: 8px;
 }
 
+.loader {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    background-color: #ffffffff;
+    height: 100vh;
+   inset: 0;
+   z-index: 1;
+   opacity: 0.8;
+   animation: disappear 1s 3s forwards;
+   transform-origin: top;
+}
+
+@keyframes disappear {
+    from {
+        transform: scale(1);
+    }
+    to { transform: scale(0);}
+}
+
 
 
 /* Explorer */
