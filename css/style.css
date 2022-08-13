@@ -38,15 +38,18 @@ main .ville {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: justify;
 
     position: fixed;
     background-color: #ffffffff;
     height: 100vh;
    inset: 0;
    z-index: 1;
-   opacity: 0.8;
+   /*opacity: 0.8;*/
    animation: disappear 1s 3s forwards;
    transform-origin: top;
+   /*border-radius: 50px;
+    border: 6px solid rgba(255,255,255,0.4);*/
 }
 
 @keyframes disappear {
@@ -62,6 +65,8 @@ main .ville {
     margin-bottom: 150px;
     animation: flash 1.2s linear infinite;
     font-family: roboto;
+    justify-content:flex-end;
+    
 }
 @keyframes flash {
     0% {color: #99e2d0;
@@ -155,7 +160,107 @@ main .ville {
 .menus {
     background-color: #f6f6f6;
 
+
 }
+
+.fa-heart {
+    position: relative;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+.fa-heart:hover{
+
+    animation: heart 1s 0s forwards;
+  
+}
+
+@keyframes heart {
+0% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+10% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+20% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+30% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+40% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+50% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+60% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+70% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+80% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+90% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+100% {
+  background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+}
+
+.fa-heart {
+position: relative;
+font-size: 1.5rem;
+background-color: transparent;
+border: none;
+margin-right: 10px;
+padding: 0;
+margin-bottom: 30px;
+}
+
+
+
+
 .carte {
     height: 18rem;
     flex-grow: 1;
@@ -251,6 +356,7 @@ footer p {
 }
 footer i {
     margin: 0 10px 0 0;
+    width: 1rem;
 }
 i.fas.fa-ustensils {
     margin: 10px;

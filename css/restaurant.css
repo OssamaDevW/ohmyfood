@@ -90,20 +90,20 @@ h3::after  {
  } 
 
 
- .conteneur_  {
-    display: flex;
+ .conteneur  {
+    display: flex;/*
+    flex-direction: column;*/
     box-shadow: 0 0 16px #0000002e;
     max-width: 100%;
     gap: 16px;
     margin: 16px;
     background-color: white;
     border-radius: 16px 16px 16px 16px;
-    height: auto;
     padding: 0px 0px 0px 10px ;
     overflow: hidden;
    
 }
-.conteneur_ {
+.conteneur {
     animation: appear 1.5s;
 }
 
@@ -155,7 +155,7 @@ i.fas.fa-check {
     transition: all 1s;
 
 }
-.conteneur_:hover .check { margin-right: 0px;}
+.conteneur:hover .check { margin-right: 0px;}
 
 
 
