@@ -222,11 +222,13 @@ h3::after  {
 span { 
     overflow: hidden;
 } 
-.div {
+
+.description {
     overflow: hidden;
 
     white-space: nowrap;
     text-overflow: ellipsis;
+    width: 150px;
 
 
 }
