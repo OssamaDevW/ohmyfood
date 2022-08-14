@@ -31,6 +31,7 @@ main .ville {
     text-align:center;
     padding: 8px;
 }
+
 /* Loading */
 
 .loader {
@@ -45,37 +46,62 @@ main .ville {
     height: 100vh;
    inset: 0;
    z-index: 1;
-   /*opacity: 0.8;*/
-   animation: disappear 1s 3s forwards;
+   animation: disappear 200ms 3s forwards ;
    transform-origin: top;
-   /*border-radius: 50px;
-    border: 6px solid rgba(255,255,255,0.4);*/
-}
+}  
 
 @keyframes disappear {
-    from {
-        transform: scale(1);
-    }
-    to { transform: scale(0);}
+    to {transform: scale(0);}
 }
-.lettre {
-    color: #9356DC;
-    font-size: 80px;
-    letter-spacing: 15px;
-    margin-bottom: 150px;
-    animation: flash 1.2s linear infinite;
-    font-family: roboto;
-    justify-content:flex-end;
+
+
+.loading {
+  
+   margin: auto;
+    margin-top: 100px ; 
+    margin-bottom: 100px;
+    border: 16px solid #bdc3c7;
+    width: 120px;
+    height: 120px;
+    border-top-color: #99E2D0;
+    border-bottom-color:#99E2D0;
+    border-radius: 50%;
+    animation: chargement 3s infinite ;
+
     
+   
+
+
 }
-@keyframes flash {
-    0% {color: #99e2d0;
-    text-shadow: 0 0 7px #99e2d0;}
-    90% {color: #9356DC;
-    text-shadow: none;}
-    100% {color: #99e2d0;
-        text-shadow: 0 0 7px #99e2d0;}
+
+
+@keyframes chargement {
+    0% {
+        transform: rotate(0deg) scale(1)
+    }
+
+    25% { border-top-color: #9356DC;
+    border-bottom-color: #9356DC;}
+    50% {
+        transform: rotate(360deg) scale(1.15);
+        border-top-color: #FF79DA;
+        border-bottom-color: #FF79DA;
+
+    }
+    75% {  border-top-color: #BCDEB1;
+        border-bottom-color: #BCDEB1;
+       
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+      
+        border-top-color: #99E2D0;
+        border-bottom-color:#99E2D0 ;
+    }
 }
+ 
+
+
 
 
 /* Explorer */
@@ -162,6 +188,7 @@ main .ville {
 
 
 }
+ /* Heart */
 
 .fa-heart {
     position: relative;
@@ -259,7 +286,7 @@ margin-bottom: 30px;
 }
 
 
-
+/* Cartes*/
 
 .carte {
     height: 18rem;
@@ -312,6 +339,7 @@ a {
 
 
 }
+/* Nouveau */
 
 .nouveau {
     position: relative;
@@ -353,7 +381,17 @@ footer {
 footer p {
     color: white;
     margin: 8px 0;
+    /*
+    cursor: pointer;*/
+    
 }
+
+footer p:hover 
+ {
+    text-decoration: underline white;
+    
+}
+
 footer i {
     margin: 0 10px 0 0;
     width: 1rem;
