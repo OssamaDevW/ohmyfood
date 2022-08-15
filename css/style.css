@@ -401,3 +401,27 @@ i.fas.fa-ustensils {
 }
 
 
+/* Responsive */
+
+@media (min-width:960px) {
+
+    .fonctionnement ol {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;}
+
+    li  {
+        width: 20%;
+    }
+
+    .carte-restau {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+
+    }
+
+   
+}
+

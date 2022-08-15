@@ -196,27 +196,105 @@ h3::after  {
     padding: 0px 0px 0px 10px ;
     overflow: hidden;
    
-}
+}  
+
+/*
 .conteneur.entrees {
-    animation: appear 2s;
+    animation: appear 1s;
+
 }
 .conteneur.plats {
-    animation: appear 4s;
+    animation: appear 2s;
+
 }
 .conteneur.desserts {
-    animation: appear 8s;
+    animation: appear 3s;
+    
+
+} */
+
+.delay-1 {
+    animation: appear 200ms ;
+    animation-delay: 200ms;
+
+    animation-fill-mode: both;
 }
+.delay-2 {
+    animation: appear 400ms ;
+    animation-delay: 400ms;
+    animation-fill-mode: both;
+
+}
+.delay-3 {
+    animation: appear 600ms ;
+    animation-delay: 600ms;
+    animation-fill-mode: both;
+
+}
+
+.delay-4 {
+    animation: appear 800ms ;
+    animation-delay: 800ms;
+
+    animation-fill-mode: both;
+}
+.delay-5 {
+    animation: appear 1s ;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+
+}
+.delay-6 {
+    animation: appear 1200ms ;
+    animation-delay: 1200ms;
+    animation-fill-mode: both;
+
+}
+
+
+.delay-7 {
+    animation: appear 1400ms ;
+    animation-delay: 1400ms;
+
+    animation-fill-mode: both;
+}
+.delay-8 {
+    animation: appear 1600ms ;
+    animation-delay: 1600ms;
+    animation-fill-mode: both;
+
+}
+.delay-9 {
+    animation: appear 1800ms ;
+    animation-delay: 1800ms;
+    animation-fill-mode: both;
+
+}
+
+
 
 
 
 @keyframes appear {
     from {
-        transform: translateY(50%);
+        transform: translateY(50%); 
         opacity: 0;
     }
     to { transform: translateY(0);
     opacity: 1;}
+} 
+
+/*
+
+@keyframes appear {
+    from {
+        transform: scale(1.1) rotate(-2deg) ;
+        opacity: 0;
+    }
+    to {transform: scale(1.1) rotate(0deg) ;
+    opacity: 1;}
 }
+*/
 
 
 span { 
@@ -228,10 +306,10 @@ span {
 
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 150px;
+    width: 80%;
 
 
-}
+} 
 
 h4, p {
     overflow: hidden;
@@ -349,5 +427,8 @@ i.fas.fa-ustensils {
         display: flex;
     flex-direction: row;
     justify-content:space-around;
+}
+.menus-entrees , .menus-plats , .menus-desserts {
+    width: 33%;
 }
 }
