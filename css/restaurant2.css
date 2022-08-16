@@ -251,6 +251,12 @@ h3::after  {
     animation-fill-mode: both;
 }
 
+.delay-10 {
+    animation: appear 2s ;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
 
 
 

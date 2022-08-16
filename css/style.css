@@ -202,7 +202,7 @@ main .ville {
 
 .fa-heart:hover{
 
-    animation: heart 1s 0s forwards;
+    animation: heart 0.5s 0s forwards;
   
 }
 
@@ -213,6 +213,7 @@ main .ville {
   color: transparent;
   font-weight: bold;
 }
+
 10% {
   background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
   -webkit-background-clip: text;
@@ -354,6 +355,7 @@ a {
     place-items: center;
     right: 16px;
     top: 16px;
+    color: green;
 }
 
 .carte-description i {
@@ -414,14 +416,12 @@ i.fas.fa-ustensils {
         width: 20%;
     }
 
-    .carte-restau {
+    .menus-carte {
 
         display: grid;
         grid-template-columns: 1fr 1fr;
         
-
     }
 
-   
 }
 
