@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
   
 
-*,
+*
  {
     box-sizing: border-box;
 }
@@ -260,7 +260,6 @@ h3::after  {
 
 
 
-
 @keyframes appear {
     from {
         transform: translateY(50%); 
@@ -329,7 +328,7 @@ h4, p {
 .conteneur:hover .check { margin-right: 0px;
 }
 
-.fa-check:hover {
+.conteneur:hover .fa-check {
     animation: quarterspin 1s;
 }
 
@@ -369,6 +368,7 @@ h4, p {
 
 }
 
+
 /* Footer */
 
 footer { 
@@ -382,22 +382,25 @@ footer {
     font-weight: 500;
 }
 
+footer a {
+
+    color: #ffffff;
+}
 footer p {
-    color: white;
+    
     margin: 8px 0;
     /*
     cursor: pointer;*/
-}
-
-footer a {
-    text-decoration: none;
-}
-
-footer p:hover 
- {
-    text-decoration: underline white;
     
 }
+
+
+footer a 
+ {
+    text-decoration: none;
+    
+}
+
 
 footer i {
     margin: 0 10px 0 0;
@@ -406,6 +409,7 @@ footer i {
 i.fas.fa-ustensils {
     margin: 10px;
 }
+
 
 /* Responsive */
 

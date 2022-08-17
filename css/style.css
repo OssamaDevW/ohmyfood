@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
   
 
-*,
+*
  {
     box-sizing: border-box;
 }
@@ -178,8 +178,17 @@ main .ville {
 .fonctionnement ol li div { 
     color: white;
 }
+
  ol i {
      margin: 0px 15px 0 0;
+     color: gray;
+ }
+
+ .fonctionnement li:hover {
+     background-color: #f0dbff;
+ }
+
+ .fonctionnement li:hover i {
      color: #9356DC;
  }
 
@@ -380,19 +389,17 @@ footer {
     font-weight: 500;
 }
 
+footer a {
+
+    color: #ffffff;
+}
 footer p {
-    color: white;
+    
     margin: 8px 0;
-    /*
-    cursor: pointer;*/
+   
     
 }
 
-footer p:hover 
- {
-    text-decoration: underline white;
-    
-}
 
 footer i {
     margin: 0 10px 0 0;
