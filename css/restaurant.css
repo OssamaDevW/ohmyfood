@@ -258,8 +258,6 @@ h3::after  {
 }
 
 
-
-
 @keyframes appear {
     from {
         transform: translateY(50%); 
@@ -303,14 +301,13 @@ h4, p {
 }
 
 
-
  /* Check */
 
- i.fas.fa-check {
+ .fa-check {
     display: grid;
     place-items: center; 
     background: white;
-    aspect-ratio: 1;
+    aspect-ratio: 1; 
     width: 24px;
     border-radius: 16px;
     color: #99e2d0 ;
@@ -389,8 +386,6 @@ footer a {
 footer p {
     
     margin: 8px 0;
-    /*
-    cursor: pointer;*/
     
 }
 
