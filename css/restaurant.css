@@ -363,6 +363,7 @@ h4, p {
 .commander button:hover {
     transform: scale(1.02);
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .commander {
